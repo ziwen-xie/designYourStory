@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Choice</string>
+    <string name="image_des">Image</string>
+    <string name="text_des">text</string>
+    <string name="but_des">button</string>
+    <string name="name">人名生成</string>
+    <string name="design">设定生成</string>
+    <string name="diy_name">自定义人名库</string>
+    <string name="diy_design">自定义设定库</string>
 </resources>
