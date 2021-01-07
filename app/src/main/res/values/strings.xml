@@ -7,4 +7,13 @@
     <string name="design">设定生成</string>
     <string name="diy_name">自定义人名库</string>
     <string name="diy_design">自定义设定库</string>
+    <string name="title_activity_randname">MainActivity</string>
+    <string name="title_home">人名生成</string>
+    <string name="title_dashboard">设定生成</string>
+    <string name="title_notifications">自定义词库</string>
+    <string name="swtich1">双字</string>
+    <string name="swtich2">三字</string>
+    <string name="generate">一键生成</string>
+    <string name="choose">词库选择</string>
+
 </resources>
