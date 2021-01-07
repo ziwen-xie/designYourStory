@@ -11,8 +11,9 @@
     <string name="title_home">人名生成</string>
     <string name="title_dashboard">设定生成</string>
     <string name="title_notifications">自定义词库</string>
-    <string name="swtich1">双字</string>
-    <string name="swtich2">三字</string>
+    <string name="swtich1">单字</string>
+    <string name="swtich2">双字</string>
+    <string name="singlename">添加姓氏</string>
     <string name="generate">一键生成</string>
     <string name="choose">词库选择</string>
 

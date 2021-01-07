@@ -9,28 +9,43 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="167dp"
-        android:layout_height="64dp"
+        android:layout_width="233dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="4dp"
         android:switchMinWidth="40dp"
         android:text="@string/swtich1"
         android:textColor="#673AB7"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="233dp"
+        android:layout_height="69dp"
+        android:switchMinWidth="40dp"
+        android:text="@string/singlename"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <Switch
         android:id="@+id/switch2"
-        android:layout_width="141dp"
-        android:layout_height="64dp"
+        android:layout_width="236dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
         android:text="@string/swtich2"
         android:textColor="#673AB7"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
@@ -39,18 +54,23 @@
         android:layout_width="178dp"
         android:layout_height="64dp"
         android:text="@string/generate"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="177dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
         android:text="@string/choose"
+        android:textColor="#673AB7"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
@@ -58,19 +78,21 @@
         android:id="@+id/spinner1"
         android:layout_width="177dp"
         android:layout_height="0dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:entries="@array/name_diy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="234dp"
-        android:layout_height="282dp"
+        android:layout_width="213dp"
+        android:layout_height="234dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/icooon"
-        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintBottom_toTopOf="@+id/switch3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
