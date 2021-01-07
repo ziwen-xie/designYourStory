@@ -9,8 +9,8 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="233dp"
-        android:layout_height="69dp"
+        android:layout_width="186dp"
+        android:layout_height="56dp"
         android:layout_marginTop="4dp"
         android:switchMinWidth="40dp"
         android:text="@string/swtich1"
@@ -24,8 +24,8 @@
 
     <Switch
         android:id="@+id/switch3"
-        android:layout_width="233dp"
-        android:layout_height="69dp"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
         android:switchMinWidth="40dp"
         android:text="@string/singlename"
         android:textColor="#673AB7"
@@ -38,8 +38,8 @@
 
     <Switch
         android:id="@+id/switch2"
-        android:layout_width="236dp"
-        android:layout_height="61dp"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
         android:layout_marginTop="4dp"
         android:text="@string/swtich2"
         android:textColor="#673AB7"
@@ -50,27 +50,27 @@
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/generate"
         android:layout_width="178dp"
         android:layout_height="64dp"
         android:text="@string/generate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="131dp"
-        android:layout_height="48dp"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
         android:layout_marginTop="12dp"
         android:text="@string/choose"
         android:textColor="#673AB7"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
