@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,6 +25,8 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private Activity activity;
+    public String settingc;
+
 
 
 
@@ -44,10 +47,16 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button re = (Button) view.findViewById(R.id.generate);
+        Spinner setting = (Spinner) view.findViewById(R.id.spinner1);
+
         re.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), result.class));
+                Intent nexta = new Intent(getActivity(), result.class);
+                settingc = setting.getSelectedItem().toString();
+                nexta.putExtra("key",settingc);
+                startActivity(nexta);
+
 
             }
         });
