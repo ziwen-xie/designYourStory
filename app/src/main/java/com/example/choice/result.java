@@ -14,6 +14,7 @@ public class result extends AppCompatActivity {
     public int randnum0;
     public int randnum;
     public int randnum2;
+    public int randnum3;
     public Random rand = new Random();
     public boolean a = false;
 
@@ -33,61 +34,119 @@ public class result extends AppCompatActivity {
 
             if(mark.equals ("乡村故事土就完事儿了风")) {
         //土味模拟器
-                if(singlename == false) {
-                    setting_tu tu1 = new setting_tu();
+                setting_tu tu = new setting_tu();
+                if(singlename == false){
 
-                    randnum0 = rand.nextInt(15);
-                    resultname = tu1.surname.substring(randnum0, randnum0 + 1);
-                    randnum = rand.nextInt(15);
-                    randnum2 = rand.nextInt(15);
-                    resultname = resultname + tu1.content1.substring(randnum, randnum + 1);
-                    resultname = resultname + tu1.content2.substring(randnum2, randnum2 + 1);
-
-
-                    rer.setText(resultname);
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
 
 
-                    Button retry = (Button) findViewById(R.id.retry); // initilization:
-                    retry.setOnClickListener(new View.OnClickListener() { // what happens when click
-                        @Override
-                        public void onClick(View v) {
-                            randnum2 = rand.nextInt(15);
-                            randnum0 = rand.nextInt(15);
-                            resultname = tu1.surname.substring(randnum0, randnum0 + 1);
-                            randnum = rand.nextInt(15);
-                            resultname = resultname + tu1.content1.substring(randnum, randnum + 1);
-                            resultname = resultname + tu1.content2.substring(randnum2, randnum2 + 1);
-
-                            rer.setText(resultname);
-
-                        }
-                    });
-                }else {
-                    setting_tu tu1 = new setting_tu();
-
-                    randnum0 = rand.nextInt(15);
-                    resultname = tu1.surname.substring(randnum0, randnum0 + 1);
-                    randnum2 = rand.nextInt(15);
-                    resultname = resultname + tu1.content2.substring(randnum2, randnum2 + 1);
+                        rer.setText(resultname);
 
 
-                    rer.setText(resultname);
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
 
 
-                    Button retry = (Button) findViewById(R.id.retry); // initilization:
-                    retry.setOnClickListener(new View.OnClickListener() { // what happens when click
-                        @Override
-                        public void onClick(View v) {
+                        rer.setText(resultname);
 
-                            randnum0 = rand.nextInt(15);
-                            resultname = tu1.surname.substring(randnum0, randnum0 + 1);
-                            randnum2 = rand.nextInt(15);
-                            resultname = resultname + tu1.content2.substring(randnum2, randnum2 + 1);
 
-                            rer.setText(resultname);
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
 
-                        }
-                    });
+                                rer.setText(resultname);
+
+                            }
+                        });
+
+                    }
+                }else{
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+
+                    }
+
                 }
         Button exit = (Button) findViewById(R.id.exit); // initilization:
         exit.setOnClickListener(new View.OnClickListener() { // what happens when click
@@ -109,10 +168,10 @@ public class result extends AppCompatActivity {
                 if(singlename == false){
 
                     if(doublename == true) {
-                        randnum0 = rand.nextInt(16);
+                        randnum0 = rand.nextInt(yuan.surname2_size-1);
                         resultname = yuan.surname2.substring(randnum0*2, randnum0*2+2);
-                        randnum = rand.nextInt(16);
-                        randnum2 = rand.nextInt(16);
+                        randnum = rand.nextInt(yuan.content1_size-1);
+                        randnum2 = rand.nextInt(yuan.content2_size-1);
                         resultname = resultname + yuan.content1.substring(randnum, randnum + 1);
                         resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
 
@@ -124,10 +183,10 @@ public class result extends AppCompatActivity {
                         retry.setOnClickListener(new View.OnClickListener() { // what happens when click
                             @Override
                             public void onClick(View v) {
-                                randnum2 = rand.nextInt(16);
-                                randnum0 = rand.nextInt(16);
+                                randnum2 = rand.nextInt(yuan.content2_size-1);
+                                randnum0 = rand.nextInt(yuan.surname2_size-1);
                                 resultname = yuan.surname2.substring(randnum0*2, randnum0*2+2);
-                                randnum = rand.nextInt(16);
+                                randnum = rand.nextInt(yuan.content1_size-1);
                                 resultname = resultname + yuan.content1.substring(randnum, randnum + 1);
                                 resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
 
@@ -136,10 +195,10 @@ public class result extends AppCompatActivity {
                             }
                         });
                     }else{
-                        randnum0 = rand.nextInt(16);
-                        randnum2 = rand.nextInt(16);
+                        randnum0 = rand.nextInt(yuan.surname_size-1);
+                        randnum2 = rand.nextInt(yuan.content2_size-1);
                         resultname = yuan.surname.substring(randnum0, randnum0 + 1);
-                        randnum = rand.nextInt(16);
+                        randnum = rand.nextInt(yuan.content1_size-1);
                         resultname = resultname + yuan.content1.substring(randnum, randnum + 1);
                         resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
 
@@ -151,10 +210,10 @@ public class result extends AppCompatActivity {
                         retry.setOnClickListener(new View.OnClickListener() { // what happens when click
                             @Override
                             public void onClick(View v) {
-                                randnum2 = rand.nextInt(16);
-                                randnum0 = rand.nextInt(16);
+                                randnum2 = rand.nextInt(yuan.content2_size-1);
+                                randnum0 = rand.nextInt(yuan.surname_size-1);
                                 resultname = yuan.surname.substring(randnum0, randnum0 + 1);
-                                randnum = rand.nextInt(16);
+                                randnum = rand.nextInt(yuan.content1_size-1);
                                 resultname = resultname + yuan.content1.substring(randnum, randnum + 1);
                                 resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
 
@@ -166,10 +225,10 @@ public class result extends AppCompatActivity {
                     }
                 }else{
                     if(doublename == true) {
-                        randnum0 = rand.nextInt(16);
+                        randnum0 = rand.nextInt(yuan.surname2_size-1);
                         resultname = yuan.surname2.substring(randnum0*2, randnum0*2+2);
 
-                        randnum2 = rand.nextInt(16);
+                        randnum2 = rand.nextInt(yuan.content2_size-1);
 
                         resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
 
@@ -181,8 +240,8 @@ public class result extends AppCompatActivity {
                         retry.setOnClickListener(new View.OnClickListener() { // what happens when click
                             @Override
                             public void onClick(View v) {
-                                randnum2 = rand.nextInt(16);
-                                randnum0 = rand.nextInt(16);
+                                randnum2 = rand.nextInt(yuan.content2_size-1);
+                                randnum0 = rand.nextInt(yuan.surname2_size-1);
                                 resultname = yuan.surname2.substring(randnum0*2, randnum0*2+2);
 
                                 resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
@@ -192,8 +251,8 @@ public class result extends AppCompatActivity {
                             }
                         });
                     }else{
-                        randnum0 = rand.nextInt(16);
-                        randnum2 = rand.nextInt(16);
+                        randnum0 = rand.nextInt(yuan.surname_size-1);
+                        randnum2 = rand.nextInt(yuan.content2_size-1);
                         resultname = yuan.surname.substring(randnum0, randnum0 + 1);
                         resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
 
@@ -205,8 +264,8 @@ public class result extends AppCompatActivity {
                         retry.setOnClickListener(new View.OnClickListener() { // what happens when click
                             @Override
                             public void onClick(View v) {
-                                randnum2 = rand.nextInt(16);
-                                randnum0 = rand.nextInt(16);
+                                randnum2 = rand.nextInt(yuan.content2_size-1);
+                                randnum0 = rand.nextInt(yuan.surname_size-1);
                                 resultname = yuan.surname.substring(randnum0, randnum0 + 1);
 
                                 resultname = resultname + yuan.content2.substring(randnum2, randnum2 + 1);
@@ -236,34 +295,122 @@ public class result extends AppCompatActivity {
 
             if(mark.equals ("玛丽苏现世风")) {
                 //土味模拟器
-                setting_marrysue ms =new setting_marrysue();
-
-                randnum0 = rand.nextInt(16);
-                resultname = ms.surname.substring(randnum0,randnum0+1);
-                randnum = rand.nextInt(16);
-                resultname = resultname + ms.content1.substring(randnum,randnum+1);
-                resultname = resultname+ ms.content2.substring(randnum2,randnum2+1);
 
 
-                rer.setText(resultname);
+                setting_marrysue tu = new setting_marrysue();
+                if(singlename == false){
 
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
 
-                Button retry = (Button) findViewById(R.id.retry); // initilization:
-                retry.setOnClickListener(new View.OnClickListener() { // what happens when click
-                    @Override
-                    public void onClick(View v) {
-                        randnum2 = rand.nextInt(15);
-                        randnum0 = rand.nextInt(15);
-                        resultname = ms.surname.substring(randnum0,randnum0+1);
-                        randnum = rand.nextInt(15);
-                        resultname = resultname + ms.content1.substring(randnum,randnum+1);
-                        resultname = resultname+ ms.content2.substring(randnum2,randnum2+1);
 
                         rer.setText(resultname);
 
-                    }
-                });
 
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+
+                    }
+                }else{
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+
+                    }
+
+                }
                 Button exit = (Button) findViewById(R.id.exit); // initilization:
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
                     @Override
@@ -280,33 +427,120 @@ public class result extends AppCompatActivity {
 
             if(mark.equals ("泯然众人配角风")) {
                 //土味模拟器
-                setting_peijue pj =new setting_peijue();
+                setting_peijue tu = new setting_peijue();
+                if(singlename == false){
 
-                randnum0 = rand.nextInt(16);
-                resultname = pj.surname.substring(randnum0,randnum0+1);
-                randnum = rand.nextInt(16);
-                resultname = resultname + pj.content1.substring(randnum,randnum+1);
-                resultname = resultname+ pj.content2.substring(randnum2,randnum2+1);
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
 
-
-                rer.setText(resultname);
-
-
-                Button retry = (Button) findViewById(R.id.retry); // initilization:
-                retry.setOnClickListener(new View.OnClickListener() { // what happens when click
-                    @Override
-                    public void onClick(View v) {
-                        randnum2 = rand.nextInt(15);
-                        randnum0 = rand.nextInt(15);
-                        resultname = pj.surname.substring(randnum0,randnum0+1);
-                        randnum = rand.nextInt(15);
-                        resultname = resultname + pj.content1.substring(randnum,randnum+1);
-                        resultname = resultname+ pj.content2.substring(randnum2,randnum2+1);
 
                         rer.setText(resultname);
 
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+
                     }
-                });
+                }else{
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+
+                    }
+
+                }
 
                 Button exit = (Button) findViewById(R.id.exit); // initilization:
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
@@ -325,34 +559,120 @@ public class result extends AppCompatActivity {
 
             if(mark.equals ("不知所云奇奇怪怪风")) {
                 //土味模拟器
-                setting_weird wd =new setting_weird();
+                setting_weird tu = new setting_weird();
+                if(singlename == false){
 
-                randnum0 = rand.nextInt(16);
-                resultname = wd.surname.substring(randnum0,randnum0+1);
-                randnum = rand.nextInt(16);
-                resultname = resultname + wd.content1.substring(randnum,randnum+1);
-                resultname = resultname+ wd.content2.substring(randnum2,randnum2+1);
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
 
-
-                rer.setText(resultname);
-
-
-                Button retry = (Button) findViewById(R.id.retry); // initilization:
-                retry.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        randnum2 = rand.nextInt(15);
-                        randnum0 = rand.nextInt(15);
-                        resultname = wd.surname.substring(randnum0,randnum0+1);
-                        randnum = rand.nextInt(15);
-                        resultname = resultname + wd.content1.substring(randnum,randnum+1);
-                        resultname = resultname+ wd.content2.substring(randnum2,randnum2+1);
 
                         rer.setText(resultname);
 
-                    }
-                });
 
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        randnum = rand.nextInt(tu.content1_size-1);
+                        resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                                randnum = rand.nextInt(tu.content1_size-1);
+                                resultname = resultname + tu.content1.substring(randnum, randnum + 1);
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+
+                    }
+                }else{
+                    if(doublename == true) {
+                        randnum0 = rand.nextInt(tu.surname2_size-1);
+                        resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname2_size-1);
+                                resultname = tu.surname2.substring(randnum0*2, randnum0*2+2);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+                    }else{
+                        randnum0 = rand.nextInt(tu.surname_size-1);
+                        randnum2 = rand.nextInt(tu.content2_size-1);
+                        resultname = tu.surname.substring(randnum0, randnum0 + 1);
+                        resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+
+                        rer.setText(resultname);
+
+
+                        Button retry = (Button) findViewById(R.id.retry); // initilization:
+                        retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                            @Override
+                            public void onClick(View v) {
+                                randnum2 = rand.nextInt(tu.content2_size-1);
+                                randnum0 = rand.nextInt(tu.surname_size-1);
+                                resultname = tu.surname.substring(randnum0, randnum0 + 1);
+
+                                resultname = resultname + tu.content2.substring(randnum2, randnum2 + 1);
+
+                                rer.setText(resultname);
+
+                            }
+                        });
+
+                    }
+
+                }
                 Button exit = (Button) findViewById(R.id.exit); // initilization:
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
                     @Override
