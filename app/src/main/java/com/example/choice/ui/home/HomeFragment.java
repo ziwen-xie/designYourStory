@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,6 +21,7 @@ import com.example.choice.MainActivity;
 import com.example.choice.R;
 import com.example.choice.randname;
 import com.example.choice.result;
+import com.example.choice.result2;
 
 public class HomeFragment extends Fragment {
 
@@ -48,18 +50,42 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button re = (Button) view.findViewById(R.id.generate);
         Spinner setting = (Spinner) view.findViewById(R.id.spinner1);
-
-        re.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent nexta = new Intent(getActivity(), result.class);
-                settingc = setting.getSelectedItem().toString();
-                nexta.putExtra("key",settingc);
-                startActivity(nexta);
+        Switch singlen = (Switch) view.findViewById(R.id.singlename);
+        Switch doublen = (Switch) view.findViewById(R.id.doublename);
+        Switch settingplus = (Switch) view.findViewById(R.id.settingplus);
 
 
-            }
-        });
+            re.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    boolean checks = settingplus.isChecked();
+                    if(checks == false) {
+                        Intent nexta = new Intent(getActivity(), result.class);
+                        settingc = setting.getSelectedItem().toString();
+                        boolean singlename = singlen.isChecked();
+                        boolean doublename = doublen.isChecked();
+                        nexta.putExtra("key", settingc);
+                        nexta.putExtra("sin", singlename);
+                        nexta.putExtra("dou", doublename);
+                        startActivity(nexta);
+                    }else{
+                        Intent nexta = new Intent(getActivity(), result2.class);
+                        settingc = setting.getSelectedItem().toString();
+                        boolean singlename = singlen.isChecked();
+                        boolean doublename = doublen.isChecked();
+                        nexta.putExtra("key", settingc);
+                        nexta.putExtra("sin", singlename);
+                        nexta.putExtra("dou", doublename);
+                        startActivity(nexta);
+
+
+                    }
+
+
+                }
+            });
+
+
     }
 
 }

@@ -5,6 +5,7 @@ public class setting_yuandan {
     public String content1; //field first name
     public String content2; //field second name
     public String surname; //field second name
+    public String surname2; //field second name
 
     public setting_yuandan() {
         size = 17;
@@ -69,6 +70,24 @@ public class setting_yuandan {
         surname = surname + "苏";
         surname = surname + "楚";
 
+        surname2 = "欧阳";
+        surname2 = surname2 + "西门";
+        surname2 = surname2 + "公孙";
+        surname2 = surname2 + "令狐";
+        surname2 = surname2 + "长孙";
+        surname2 = surname2 + "慕容";
+        surname2 = surname2 + "百里";
+        surname2 = surname2 + "司马";
+        surname2 = surname2 + "尉迟";
+        surname2 = surname2 + "乐正";
+        surname2 = surname2 + "北堂";
+        surname2 = surname2 + "端木";
+        surname2 = surname2 + "上官";
+        surname2 = surname2 + "纳兰";
+        surname2 = surname2 + "司徒";
+        surname2 = surname2 + "漆雕";
+        surname2 = surname2 + "北宫";
+        surname2 = surname2 + "青阳";
 
 
 
