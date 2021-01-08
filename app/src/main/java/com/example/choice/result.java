@@ -63,7 +63,7 @@ public class result extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() { // what happens when click
             @Override
             public void onClick(View v) {
-                Intent nexta = new Intent(result.this, MainActivity.class);
+                Intent nexta = new Intent(result.this, randname.class);
                 startActivity(nexta);
 
             }
@@ -107,7 +107,7 @@ public class result extends AppCompatActivity {
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
                     @Override
                     public void onClick(View v) {
-                        Intent nexta = new Intent(result.this, MainActivity.class);
+                        Intent nexta = new Intent(result.this,randname.class);
                         startActivity(nexta);
 
                     }
@@ -151,7 +151,7 @@ public class result extends AppCompatActivity {
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
                     @Override
                     public void onClick(View v) {
-                        Intent nexta = new Intent(result.this, MainActivity.class);
+                        Intent nexta = new Intent(result.this, randname.class);
                         startActivity(nexta);
 
                     }
@@ -160,6 +160,105 @@ public class result extends AppCompatActivity {
 
 
             }//玛丽苏模拟器结束
+
+            if(mark.equals ("泯然众人配角风")) {
+                //土味模拟器
+                setting_peijue pj =new setting_peijue();
+
+                randnum0 = rand.nextInt(16);
+                resultname = pj.surname.substring(randnum0,randnum0+1);
+                randnum = rand.nextInt(16);
+                resultname = resultname + pj.content1.substring(randnum,randnum+1);
+                resultname = resultname+ pj.content2.substring(randnum2,randnum2+1);
+
+
+                rer.setText(resultname);
+
+
+                Button retry = (Button) findViewById(R.id.retry); // initilization:
+                retry.setOnClickListener(new View.OnClickListener() { // what happens when click
+                    @Override
+                    public void onClick(View v) {
+                        randnum2 = rand.nextInt(15);
+                        randnum0 = rand.nextInt(15);
+                        resultname = pj.surname.substring(randnum0,randnum0+1);
+                        randnum = rand.nextInt(15);
+                        resultname = resultname + pj.content1.substring(randnum,randnum+1);
+                        resultname = resultname+ pj.content2.substring(randnum2,randnum2+1);
+
+                        rer.setText(resultname);
+
+                    }
+                });
+
+                Button exit = (Button) findViewById(R.id.exit); // initilization:
+                exit.setOnClickListener(new View.OnClickListener() { // what happens when click
+                    @Override
+                    public void onClick(View v) {
+                        Intent nexta = new Intent(result.this,randname.class);
+                        startActivity(nexta);
+
+                    }
+                });
+
+
+
+            }//配角模拟器结束
+
+
+            if(mark.equals ("不知所云奇奇怪怪风")) {
+                //土味模拟器
+                setting_weird wd =new setting_weird();
+
+                randnum0 = rand.nextInt(16);
+                resultname = wd.surname.substring(randnum0,randnum0+1);
+                randnum = rand.nextInt(16);
+                resultname = resultname + wd.content1.substring(randnum,randnum+1);
+                resultname = resultname+ wd.content2.substring(randnum2,randnum2+1);
+
+
+                rer.setText(resultname);
+
+
+                Button retry = (Button) findViewById(R.id.retry); // initilization:
+                retry.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        randnum2 = rand.nextInt(15);
+                        randnum0 = rand.nextInt(15);
+                        resultname = wd.surname.substring(randnum0,randnum0+1);
+                        randnum = rand.nextInt(15);
+                        resultname = resultname + wd.content1.substring(randnum,randnum+1);
+                        resultname = resultname+ wd.content2.substring(randnum2,randnum2+1);
+
+                        rer.setText(resultname);
+
+                    }
+                });
+
+                Button exit = (Button) findViewById(R.id.exit); // initilization:
+                exit.setOnClickListener(new View.OnClickListener() { // what happens when click
+                    @Override
+                    public void onClick(View v) {
+                        Intent nexta = new Intent(result.this,randname.class);
+                        startActivity(nexta);
+
+                    }
+                });
+
+
+
+            }//配角模拟器结束
         } // 检查key结束
+
+        Button exit = (Button) findViewById(R.id.exit); // initilization:
+        exit.setOnClickListener(new View.OnClickListener() { // what happens when click
+            @Override
+            public void onClick(View v) {
+                Intent nexta = new Intent(result.this,randname.class);
+                startActivity(nexta);
+
+            }
+        });
     }
 }

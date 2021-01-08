@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="224dp"
-        android:layout_height="249dp"
+        android:layout_width="187dp"
+        android:layout_height="195dp"
         android:contentDescription="@string/image_des"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/diy_design"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,6 @@
         android:id="@+id/name"
         android:layout_width="130dp"
         android:layout_height="137dp"
-        android:layout_marginTop="37dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/but_des"
         android:fontFamily="sans-serif"
