@@ -81,12 +81,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
 
                             }
@@ -121,12 +134,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
 
                             }
@@ -163,12 +189,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
 
                             }
@@ -200,12 +239,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
 
                             }
@@ -223,12 +275,25 @@ public class result2 extends AppCompatActivity {
                 rande = rand.nextInt(tu.job_size);
                 String jobe = tu.job[rande];
                 job.setText(jobe);
-                randk1 = rand.nextInt(tu.keyword1_size);
-                String keyword1s = tu.keyword1[randk1];
+                randk2 = rand.nextInt(tu.keyword1_size);
+                String keyword1s = tu.keyword1[randk2];
                 keyword1.setText(keyword1s);
-                randk2 = rand.nextInt(tu.keyword2_size);
-                String keyword2s = tu.keyword2[randk2];
+                randk1 = rand.nextInt(tu.keyword2_size);
+                String keyword2s = tu.keyword2[randk1];
                 keyword2.setText(keyword2s);
+                randk1 = rand.nextInt(tu.appear_size);
+                randk2 = rand.nextInt(tu.appear2_size);
+                String ap = tu.appear[randk1];
+                String ap2 = tu.appear2[randk2];
+                appear.setText(ap+ap2);
+                randk1 = rand.nextInt(tu.favor_size);
+                String fav = tu.favor[randk1];
+                favor.setText(fav);
+                randk1 = rand.nextInt(tu.desc_size);
+                randk2 = rand.nextInt(tu.desc2_size);
+                ap = tu.desc[randk1];
+                ap2 = tu.desc2[randk2];
+                descri.setText("在" +ap+ap2);
 
                 Button exit = (Button) findViewById(R.id.exit); // initilization:
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
@@ -279,12 +344,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(yuan.job_size);
                                 String jobe = yuan.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(yuan.keyword1_size);
-                                String keyword1s = yuan.keyword1[randk1];
+                                randk2 = rand.nextInt(yuan.keyword1_size);
+                                String keyword1s = yuan.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(yuan.keyword2_size);
-                                String keyword2s = yuan.keyword2[randk2];
+                                randk1 = rand.nextInt(yuan.keyword2_size);
+                                String keyword2s = yuan.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(yuan.appear_size);
+                                randk2 = rand.nextInt(yuan.appear2_size);
+                                String ap = yuan.appear[randk1];
+                                String ap2 = yuan.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(yuan.favor_size);
+                                String fav = yuan.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(yuan.desc_size);
+                                randk2 = rand.nextInt(yuan.desc2_size);
+                                ap = yuan.desc[randk1];
+                                ap2 = yuan.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -318,12 +396,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(yuan.job_size);
                                 String jobe = yuan.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(yuan.keyword1_size);
-                                String keyword1s = yuan.keyword1[randk1];
+                                randk2 = rand.nextInt(yuan.keyword1_size);
+                                String keyword1s = yuan.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(yuan.keyword2_size);
-                                String keyword2s = yuan.keyword2[randk2];
+                                randk1 = rand.nextInt(yuan.keyword2_size);
+                                String keyword2s = yuan.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(yuan.appear_size);
+                                randk2 = rand.nextInt(yuan.appear2_size);
+                                String ap = yuan.appear[randk1];
+                                String ap2 = yuan.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(yuan.favor_size);
+                                String fav = yuan.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(yuan.desc_size);
+                                randk2 = rand.nextInt(yuan.desc2_size);
+                                ap = yuan.desc[randk1];
+                                ap2 = yuan.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -359,12 +450,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(yuan.job_size);
                                 String jobe = yuan.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(yuan.keyword1_size);
-                                String keyword1s = yuan.keyword1[randk1];
+                                randk2 = rand.nextInt(yuan.keyword1_size);
+                                String keyword1s = yuan.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(yuan.keyword2_size);
-                                String keyword2s = yuan.keyword2[randk2];
+                                randk1 = rand.nextInt(yuan.keyword2_size);
+                                String keyword2s = yuan.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(yuan.appear_size);
+                                randk2 = rand.nextInt(yuan.appear2_size);
+                                String ap = yuan.appear[randk1];
+                                String ap2 = yuan.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(yuan.favor_size);
+                                String fav = yuan.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(yuan.desc_size);
+                                randk2 = rand.nextInt(yuan.desc2_size);
+                                ap = yuan.desc[randk1];
+                                ap2 = yuan.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
                             }
                         });
                     }else{
@@ -394,12 +498,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(yuan.job_size);
                                 String jobe = yuan.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(yuan.keyword1_size);
-                                String keyword1s = yuan.keyword1[randk1];
+                                randk2 = rand.nextInt(yuan.keyword1_size);
+                                String keyword1s = yuan.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(yuan.keyword2_size);
-                                String keyword2s = yuan.keyword2[randk2];
+                                randk1 = rand.nextInt(yuan.keyword2_size);
+                                String keyword2s = yuan.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(yuan.appear_size);
+                                randk2 = rand.nextInt(yuan.appear2_size);
+                                String ap = yuan.appear[randk1];
+                                String ap2 = yuan.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(yuan.favor_size);
+                                String fav = yuan.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(yuan.desc_size);
+                                randk2 = rand.nextInt(yuan.desc2_size);
+                                ap = yuan.desc[randk1];
+                                ap2 = yuan.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -413,12 +530,25 @@ public class result2 extends AppCompatActivity {
                 rande = rand.nextInt(yuan.job_size);
                 String jobe = yuan.job[rande];
                 job.setText(jobe);
-                randk1 = rand.nextInt(yuan.keyword1_size);
-                String keyword1s = yuan.keyword1[randk1];
+                randk2 = rand.nextInt(yuan.keyword1_size);
+                String keyword1s = yuan.keyword1[randk2];
                 keyword1.setText(keyword1s);
-                randk2 = rand.nextInt(yuan.keyword2_size);
-                String keyword2s = yuan.keyword2[randk2];
+                randk1 = rand.nextInt(yuan.keyword2_size);
+                String keyword2s = yuan.keyword2[randk1];
                 keyword2.setText(keyword2s);
+                randk1 = rand.nextInt(yuan.appear_size);
+                randk2 = rand.nextInt(yuan.appear2_size);
+                String ap = yuan.appear[randk1];
+                String ap2 = yuan.appear2[randk2];
+                appear.setText(ap+ap2);
+                randk1 = rand.nextInt(yuan.favor_size);
+                String fav = yuan.favor[randk1];
+                favor.setText(fav);
+                randk1 = rand.nextInt(yuan.desc_size);
+                randk2 = rand.nextInt(yuan.desc2_size);
+                ap = yuan.desc[randk1];
+                ap2 = yuan.desc2[randk2];
+                descri.setText("在" +ap+ap2);
 
                 Button exit = (Button) findViewById(R.id.exit); // initilization:
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
@@ -471,12 +601,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -510,12 +653,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -551,12 +707,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -587,12 +756,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -606,6 +788,25 @@ public class result2 extends AppCompatActivity {
                 rande = rand.nextInt(tu.job_size);
                 String jobe = tu.job[rande];
                 job.setText(jobe);
+                randk2 = rand.nextInt(tu.keyword1_size);
+                String keyword1s = tu.keyword1[randk2];
+                keyword1.setText(keyword1s);
+                randk1 = rand.nextInt(tu.keyword2_size);
+                String keyword2s = tu.keyword2[randk1];
+                keyword2.setText(keyword2s);
+                randk1 = rand.nextInt(tu.appear_size);
+                randk2 = rand.nextInt(tu.appear2_size);
+                String ap = tu.appear[randk1];
+                String ap2 = tu.appear2[randk2];
+                appear.setText(ap+ap2);
+                randk1 = rand.nextInt(tu.favor_size);
+                String fav = tu.favor[randk1];
+                favor.setText(fav);
+                randk1 = rand.nextInt(tu.desc_size);
+                randk2 = rand.nextInt(tu.desc2_size);
+                ap = tu.desc[randk1];
+                ap2 = tu.desc2[randk2];
+                descri.setText("在" +ap+ap2);
 
                 Button exit = (Button) findViewById(R.id.exit); // initilization:
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click
@@ -655,13 +856,25 @@ public class result2 extends AppCompatActivity {
                                 age.setText(s);
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
-                                job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -694,13 +907,25 @@ public class result2 extends AppCompatActivity {
                                 age.setText(s);
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
-                                job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -736,12 +961,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -772,12 +1010,25 @@ public class result2 extends AppCompatActivity {
                                 rande = rand.nextInt(tu.job_size);
                                 String jobe = tu.job[rande];
                                 job.setText(jobe);
-                                randk1 = rand.nextInt(tu.keyword1_size);
-                                String keyword1s = tu.keyword1[randk1];
+                                randk2 = rand.nextInt(tu.keyword1_size);
+                                String keyword1s = tu.keyword1[randk2];
                                 keyword1.setText(keyword1s);
-                                randk2 = rand.nextInt(tu.keyword2_size);
-                                String keyword2s = tu.keyword2[randk2];
+                                randk1 = rand.nextInt(tu.keyword2_size);
+                                String keyword2s = tu.keyword2[randk1];
                                 keyword2.setText(keyword2s);
+                                randk1 = rand.nextInt(tu.appear_size);
+                                randk2 = rand.nextInt(tu.appear2_size);
+                                String ap = tu.appear[randk1];
+                                String ap2 = tu.appear2[randk2];
+                                appear.setText(ap+ap2);
+                                randk1 = rand.nextInt(tu.favor_size);
+                                String fav = tu.favor[randk1];
+                                favor.setText(fav);
+                                randk1 = rand.nextInt(tu.desc_size);
+                                randk2 = rand.nextInt(tu.desc2_size);
+                                ap = tu.desc[randk1];
+                                ap2 = tu.desc2[randk2];
+                                descri.setText("在" +ap+ap2);
 
                             }
                         });
@@ -792,12 +1043,25 @@ public class result2 extends AppCompatActivity {
                 rande = rand.nextInt(tu.job_size);
                 String jobe = tu.job[rande];
                 job.setText(jobe);
-                randk1 = rand.nextInt(tu.keyword1_size);
-                String keyword1s = tu.keyword1[randk1];
+                randk2 = rand.nextInt(tu.keyword1_size);
+                String keyword1s = tu.keyword1[randk2];
                 keyword1.setText(keyword1s);
-                randk2 = rand.nextInt(tu.keyword2_size);
-                String keyword2s = tu.keyword2[randk2];
+                randk1 = rand.nextInt(tu.keyword2_size);
+                String keyword2s = tu.keyword2[randk1];
                 keyword2.setText(keyword2s);
+                randk1 = rand.nextInt(tu.appear_size);
+                randk2 = rand.nextInt(tu.appear2_size);
+                String ap = tu.appear[randk1];
+                String ap2 = tu.appear2[randk2];
+                appear.setText(ap+ap2);
+                randk1 = rand.nextInt(tu.favor_size);
+                String fav = tu.favor[randk1];
+                favor.setText(fav);
+                randk1 = rand.nextInt(tu.desc_size);
+                randk2 = rand.nextInt(tu.desc2_size);
+                ap = tu.desc[randk1];
+                ap2 = tu.desc2[randk2];
+                descri.setText("在" +ap+ap2);
 
                 Button exit = (Button) findViewById(R.id.exit); // initilization:
                 exit.setOnClickListener(new View.OnClickListener() { // what happens when click

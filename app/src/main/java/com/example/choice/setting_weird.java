@@ -340,7 +340,7 @@ public class setting_weird {
         keyword2[37] = "化妆水";
         keyword2[38] = "酒精";
         keyword2[39] = "便利店";
-        keyword2[30] = "塑料袋";
+        keyword2[40] = "塑料袋";
         keyword2[41] = "加湿器";
         keyword2[42] = "星球";
         keyword2[43] = "荒野的迷路";
@@ -360,7 +360,17 @@ public class setting_weird {
         keyword2[57] = "特效";
         keyword2[58] = "晕血";
         keyword2[59] = "斯德哥尔摩";
-        keyword2[60] = "哥本哈根";
+        keyword2[60] = "猫眼石";
+        keyword2[61] = "海平面";
+        keyword2[62] = "涨潮";
+        keyword2[63] = "月圆之日";
+        keyword2[64] = "滴落的油漆";
+        keyword2[65] = "斑驳的墙壁";
+        keyword2[66] = "鱼缸中的血迹";
+        keyword2[67] = "卫生间的血迹";
+        keyword2[68] = "DNA测序";
+        keyword2[69] = "干掉的调色盘";
+        keyword2[70] = "惨白的日光灯";
         keyword2[71] = "枯山水";
         keyword2[72] = "蚊香";
         keyword2[73] = "自燃";
